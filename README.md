@@ -2,6 +2,17 @@
 
 A 3D UML diagram generator that transforms Mermaid-like DSL into glTF 2.0 format.
 
+## 🌐 Live Demo
+
+Experience the extuml 3D viewer online:
+**[https://ryo-arima.github.io/extuml/](https://ryo-arima.github.io/extuml/)**
+
+The live demo showcases:
+- 🎮 Interactive 3D UML diagrams with mouse controls
+- 📊 Real-time model metadata display
+- 📄 Complete glTF JSON structure preview
+- 🔄 Built with Three.js for smooth 3D rendering
+
 ## Quick Start
 
 ### Using Makefile (Recommended)
@@ -51,22 +62,28 @@ python3 -m http.server 8000
 # Then open http://localhost:8000 in your browser
 ```
 
-The viewer features:
-- � **Auto-reload**: Refreshes every 2 seconds during development
-- � **Automatic loading**: Always displays .etc/output.gl
+### Local Development Viewer
+
+The local viewer features:
+- 🔄 **Auto-reload**: Refreshes every 2 seconds during development  
+- 📁 **Automatic loading**: Always displays `etc/output.gl`
 - 🎮 **Interactive controls**: Rotate, zoom, and pan with mouse
 - 📊 **Metadata display**: Shows model info and glTF structure
 - 📄 **JSON preview**: View complete glTF asset data
-- Built with [model-viewer](https://modelviewer.dev/) by Google
+- ⚡ **Built with Three.js**: High-performance WebGL rendering
+
+### Online Viewer
+
+Visit the **[live demo](https://ryo-arima.github.io/extuml/)** to see extuml in action without any setup!
 
 ## Project Structure
 
 ```
 extuml/
 ├── .bin/                   # Built binaries
-├── .dist/                  # Web viewer for glTF files
-│   └── index.html         # model-viewer based 3D viewer
-├── .etc/                   # Sample files
+├── dist/                   # Web viewer for glTF files (GitHub Pages)
+│   └── index.html         # Three.js based 3D viewer
+├── etc/                    # Sample files
 │   ├── sample.extuml      # Sample extuml DSL
 │   └── output.gl          # Generated glTF output
 ├── cmd/                   # CLI entry point
@@ -79,6 +96,8 @@ extuml/
 │   ├── repository/       # File I/O
 │   └── usecase/          # Business logic
 ├── test/                  # Integration tests
+├── .github/workflows/     # GitHub Actions
+│   └── static.yml        # Deploy to GitHub Pages
 ├── go.mod
 └── README.md
 ```
@@ -99,7 +118,7 @@ Following clean architecture pattern:
 ### Run with sample
 
 ```bash
-go run ./cmd generate --extuml .etc/sample.extuml --output output.gl
+go run ./cmd generate --extuml etc/sample.extuml --output output.gl
 ```
 
 ### Test
@@ -107,6 +126,17 @@ go run ./cmd generate --extuml .etc/sample.extuml --output output.gl
 ```bash
 go test ./...
 ```
+
+### GitHub Pages Deployment
+
+The 3D viewer is automatically deployed to GitHub Pages on every push to the main branch:
+
+1. **Build Process**: GitHub Actions builds the Go binary and generates sample output
+2. **Asset Preparation**: Generated glTF files and viewer assets are copied to `dist/`
+3. **Deployment**: The `dist/` directory contents are published to GitHub Pages
+4. **Live URL**: Available at https://ryo-arima.github.io/extuml/
+
+To trigger a manual deployment, go to the Actions tab and run the "Deploy extuml 3D Viewer to Pages" workflow.
 
 ## License
 
