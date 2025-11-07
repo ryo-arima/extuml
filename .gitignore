@@ -1,0 +1,7 @@
+.bin/
+*.gl
+*.glb
+
+.dist/etc/
+
+.github/instructions/*

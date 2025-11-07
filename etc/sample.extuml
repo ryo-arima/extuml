@@ -1,0 +1,24 @@
+extuml classDiagram3D
+
+class Person {
+  +id: int
+  +name: string
+  +email: string
+  +getName(): string
+  +setEmail(email: string): void
+  @url: https://github.com/extuml/extuml
+}
+
+class Address {
+  +street: string
+  +city: string
+  +country: string
+  +getFullAddress(): string
+  @url: https://www.openstreetmap.org/
+}
+
+class Company {
+  +name: string
+  +founded: int
+  @url: https://example.com/company
+}
