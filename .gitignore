@@ -1,6 +1,4 @@
 .bin/
-*.gl
-*.glb
 
 .dist/etc/
 

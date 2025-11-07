@@ -1,0 +1,596 @@
+{
+  "asset": {
+    "version": "2.0",
+    "generator": "extuml-cli v0.1",
+    "extras": {
+      "camera": {
+        "bounds": {
+          "center": [
+            3,
+            0,
+            0
+          ],
+          "max": [
+            8,
+            2,
+            0.5
+          ],
+          "min": [
+            -2,
+            -2,
+            -0.5
+          ],
+          "size": [
+            10,
+            4,
+            1
+          ]
+        },
+        "recommended": {
+          "distance": 25,
+          "orbit": [
+            45,
+            55,
+            25
+          ],
+          "target": [
+            3,
+            0,
+            0
+          ]
+        }
+      },
+      "extuml": {
+        "generatedAt": "2025-11-07T20:01:36Z",
+        "version": "0.1"
+      }
+    }
+  },
+  "scenes": [
+    {
+      "nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "name": "Scene"
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Person",
+      "mesh": 0,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "extras": {
+        "extuml": {
+          "attributes": 3,
+          "id": "Person",
+          "operations": 2,
+          "type": "class"
+        }
+      }
+    },
+    {
+      "name": "text_node_1",
+      "mesh": 1,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "extras": {
+        "billboard": true,
+        "extuml": {
+          "text": "Person\nhttps://github.com/extuml/extuml\n---\nint: id:\nstring: name:\nstring: email:\n---\ngetName(): string\nsetEmail(): string): void",
+          "type": "text"
+        },
+        "url": "https://github.com/extuml/extuml"
+      }
+    },
+    {
+      "name": "Address",
+      "mesh": 2,
+      "translation": [
+        3,
+        0,
+        0
+      ],
+      "extras": {
+        "extuml": {
+          "attributes": 3,
+          "id": "Address",
+          "operations": 1,
+          "type": "class"
+        }
+      }
+    },
+    {
+      "name": "text_node_3",
+      "mesh": 3,
+      "translation": [
+        3,
+        0,
+        0
+      ],
+      "extras": {
+        "billboard": true,
+        "extuml": {
+          "text": "Address\nhttps://www.openstreetmap.org/\n---\nstring: street:\nstring: city:\nstring: country:\n---\ngetFullAddress(): string",
+          "type": "text"
+        },
+        "url": "https://www.openstreetmap.org/"
+      }
+    },
+    {
+      "name": "Company",
+      "mesh": 4,
+      "translation": [
+        6,
+        0,
+        0
+      ],
+      "extras": {
+        "extuml": {
+          "attributes": 2,
+          "id": "Company",
+          "operations": 0,
+          "type": "class"
+        }
+      }
+    },
+    {
+      "name": "text_node_5",
+      "mesh": 5,
+      "translation": [
+        6,
+        0,
+        0
+      ],
+      "extras": {
+        "billboard": true,
+        "extuml": {
+          "text": "Company\nhttps://example.com/company\n---\nstring: name:\nint: founded:\n---",
+          "type": "text"
+        },
+        "url": "https://example.com/company"
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Person_wireframe",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0
+          },
+          "indices": 1,
+          "material": 0,
+          "mode": 1
+        }
+      ]
+    },
+    {
+      "name": "text_Person\nhttps://github.com/extuml/extuml\n---\nint: id:\nstring: name:\nstring: email:\n---\ngetName(): string\nsetEmail(): string): void",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Address_wireframe",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 5
+          },
+          "indices": 6,
+          "material": 2,
+          "mode": 1
+        }
+      ]
+    },
+    {
+      "name": "text_Address\nhttps://www.openstreetmap.org/\n---\nstring: street:\nstring: city:\nstring: country:\n---\ngetFullAddress(): string",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 7,
+            "TEXCOORD_0": 8
+          },
+          "indices": 9,
+          "material": 3,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Company_wireframe",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 10
+          },
+          "indices": 11,
+          "material": 4,
+          "mode": 1
+        }
+      ]
+    },
+    {
+      "name": "text_Company\nhttps://example.com/company\n---\nstring: name:\nint: founded:\n---",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 12,
+            "TEXCOORD_0": 13
+          },
+          "indices": 14,
+          "material": 5,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "name": "Person_material",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.2,
+          0.6,
+          0.8,
+          1
+        ],
+        "roughnessFactor": 1
+      },
+      "emissiveFactor": [
+        0.2,
+        0.6,
+        0.8
+      ],
+      "doubleSided": true
+    },
+    {
+      "name": "text_material_1",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "roughnessFactor": 1
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "Address_material",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.2,
+          0.6,
+          0.8,
+          1
+        ],
+        "roughnessFactor": 1
+      },
+      "emissiveFactor": [
+        0.2,
+        0.6,
+        0.8
+      ],
+      "doubleSided": true
+    },
+    {
+      "name": "text_material_3",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "roughnessFactor": 1
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "Company_material",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.2,
+          0.6,
+          0.8,
+          1
+        ],
+        "roughnessFactor": 1
+      },
+      "emissiveFactor": [
+        0.2,
+        0.6,
+        0.8
+      ],
+      "doubleSided": true
+    },
+    {
+      "name": "text_material_5",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "roughnessFactor": 1
+      },
+      "doubleSided": true
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 144,
+      "uri": "data:application/octet-stream;base64,AACgvwAAoL8AAKA/AACgPwAAoL8AAKA/AACgPwAAoL8AAKC/AACgvwAAoL8AAKC/AACgvwAAoD8AAKA/AACgPwAAoD8AAKA/AACgPwAAoD8AAKC/AACgvwAAoD8AAKC/AAABAAEAAgACAAMAAwAAAAQABQAFAAYABgAHAAcABAAAAAQAAQAFAAIABgADAAcA"
+    },
+    {
+      "byteLength": 92,
+      "uri": "data:application/octet-stream;base64,mpmZv5qZmb8AAAAAAAAAAAAAgD+amZk/mpmZvwAAAAAAAIA/AACAP5qZmT+amZk/AAAAAAAAgD8AAAAAmpmZv5qZmT8AAAAAAAAAAAAAAAAAAAEAAgAAAAIAAwA="
+    },
+    {
+      "byteLength": 144,
+      "uri": "data:application/octet-stream;base64,AACgvwAAoL8AAKA/AACgPwAAoL8AAKA/AACgPwAAoL8AAKC/AACgvwAAoL8AAKC/AACgvwAAoD8AAKA/AACgPwAAoD8AAKA/AACgPwAAoD8AAKC/AACgvwAAoD8AAKC/AAABAAEAAgACAAMAAwAAAAQABQAFAAYABgAHAAcABAAAAAQAAQAFAAIABgADAAcA"
+    },
+    {
+      "byteLength": 92,
+      "uri": "data:application/octet-stream;base64,mpmZv5qZmb8AAAAAAAAAAAAAgD+amZk/mpmZvwAAAAAAAIA/AACAP5qZmT+amZk/AAAAAAAAgD8AAAAAmpmZv5qZmT8AAAAAAAAAAAAAAAAAAAEAAgAAAAIAAwA="
+    },
+    {
+      "byteLength": 144,
+      "uri": "data:application/octet-stream;base64,AACgvwAAoL8AAKA/AACgPwAAoL8AAKA/AACgPwAAoL8AAKC/AACgvwAAoL8AAKC/AACgvwAAoD8AAKA/AACgPwAAoD8AAKA/AACgPwAAoD8AAKC/AACgvwAAoD8AAKC/AAABAAEAAgACAAMAAwAAAAQABQAFAAYABgAHAAcABAAAAAQAAQAFAAIABgADAAcA"
+    },
+    {
+      "byteLength": 92,
+      "uri": "data:application/octet-stream;base64,mpmZv5qZmb8AAAAAAAAAAAAAgD+amZk/mpmZvwAAAAAAAIA/AACAP5qZmT+amZk/AAAAAAAAgD8AAAAAmpmZv5qZmT8AAAAAAAAAAAAAAAAAAAEAAgAAAAIAAwA="
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 96,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 96,
+      "byteLength": 48,
+      "target": 34963
+    },
+    {
+      "buffer": 1,
+      "byteLength": 80,
+      "byteStride": 20,
+      "target": 34962
+    },
+    {
+      "buffer": 1,
+      "byteOffset": 80,
+      "byteLength": 12,
+      "target": 34963
+    },
+    {
+      "buffer": 2,
+      "byteLength": 96,
+      "target": 34962
+    },
+    {
+      "buffer": 2,
+      "byteOffset": 96,
+      "byteLength": 48,
+      "target": 34963
+    },
+    {
+      "buffer": 3,
+      "byteLength": 80,
+      "byteStride": 20,
+      "target": 34962
+    },
+    {
+      "buffer": 3,
+      "byteOffset": 80,
+      "byteLength": 12,
+      "target": 34963
+    },
+    {
+      "buffer": 4,
+      "byteLength": 96,
+      "target": 34962
+    },
+    {
+      "buffer": 4,
+      "byteOffset": 96,
+      "byteLength": 48,
+      "target": 34963
+    },
+    {
+      "buffer": 5,
+      "byteLength": 80,
+      "byteStride": 20,
+      "target": 34962
+    },
+    {
+      "buffer": 5,
+      "byteOffset": 80,
+      "byteLength": 12,
+      "target": 34963
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 8,
+      "type": "VEC3",
+      "max": [
+        1.25,
+        1.25,
+        1.25
+      ],
+      "min": [
+        -1.25,
+        -1.25,
+        -1.25
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5123,
+      "count": 24,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 4,
+      "type": "VEC3",
+      "max": [
+        1.2,
+        1.2,
+        0
+      ],
+      "min": [
+        -1.2,
+        -1.2,
+        0
+      ]
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 12,
+      "componentType": 5126,
+      "count": 4,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5123,
+      "count": 6,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5126,
+      "count": 8,
+      "type": "VEC3",
+      "max": [
+        1.25,
+        1.25,
+        1.25
+      ],
+      "min": [
+        -1.25,
+        -1.25,
+        -1.25
+      ]
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5123,
+      "count": 24,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 6,
+      "componentType": 5126,
+      "count": 4,
+      "type": "VEC3",
+      "max": [
+        1.2,
+        1.2,
+        0
+      ],
+      "min": [
+        -1.2,
+        -1.2,
+        0
+      ]
+    },
+    {
+      "bufferView": 6,
+      "byteOffset": 12,
+      "componentType": 5126,
+      "count": 4,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 7,
+      "componentType": 5123,
+      "count": 6,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 8,
+      "componentType": 5126,
+      "count": 8,
+      "type": "VEC3",
+      "max": [
+        1.25,
+        1.25,
+        1.25
+      ],
+      "min": [
+        -1.25,
+        -1.25,
+        -1.25
+      ]
+    },
+    {
+      "bufferView": 9,
+      "componentType": 5123,
+      "count": 24,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 10,
+      "componentType": 5126,
+      "count": 4,
+      "type": "VEC3",
+      "max": [
+        1.2,
+        1.2,
+        0
+      ],
+      "min": [
+        -1.2,
+        -1.2,
+        0
+      ]
+    },
+    {
+      "bufferView": 10,
+      "byteOffset": 12,
+      "componentType": 5126,
+      "count": 4,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 11,
+      "componentType": 5123,
+      "count": 6,
+      "type": "SCALAR"
+    }
+  ]
+}
